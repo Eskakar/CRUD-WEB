@@ -67,7 +67,7 @@
                         <a href=delete_waktu.php?id_waktu=<?php echo $data['id_waktu'];?> class="link-dark link-offset-2 link-underline link-underline-opacity-0">Hapus</a> 
                     </button>
                     </td>
-                    <p> <?php $no = $no+1 ?></p>
+                    <p> <?php $no = $no+1 ?></p>  <!--123230085-->
                 <?php }	?>
             </tbody>
         </table>
@@ -97,6 +97,7 @@
                     $konekku=mysqli_query($query,"INSERT INTO waktu VALUES('','$waktu_mulai','$waktu_selesai')") or die(mysqli_error($query));
                 }
             ?>
+                 
             </div>
         </div>          
     </div>
